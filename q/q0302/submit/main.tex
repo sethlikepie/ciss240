@@ -1,0 +1,126 @@
+%-*-latex-*-
+\input{thispreamble}
+
+This is a closed-book, no compiler, 5 minute quiz.
+
+%------------------------------------------------------------------------------
+\nextq
+Here's a code fragment.
+Notice that there's a repeating chunk of code.
+(The repeating chunk of code appears 5 times.)
+\begin{console}[commandchars=\@\{\},fontsize=\footnotesize]
+int i = 0;
+
+std::cout << i << '\n';
+i = i + 1;
+
+std::cout << i << '\n';
+i = i + 1;
+
+std::cout << i << '\n';
+i = i + 1;
+
+std::cout << i << '\n';
+i = i + 1;
+
+std::cout << i << '\n';
+i = i + 1;
+\end{console}
+What is the last integer output and what is the final value of \verb!i!?
+If you think the last integer output is \verb!111! and the final
+value of \verb!i! is \verb!222!, write \verb!111 222! with
+exactly one space between the two integers.
+\\
+\ANSWER
+\begin{answercode}
+4 5
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Here's another code fragment:
+\begin{console}[commandchars=\@\{\},fontsize=\footnotesize]
+int i = 42;
+
+i = i + 1;
+std::cout << i << '\n';
+
+i = i + 1;
+std::cout << i << '\n';
+
+i = i + 1;
+std::cout << i << '\n';
+
+i = i + 1;
+std::cout << i << '\n';
+
+i = i + 1;
+std::cout << i << '\n';
+\end{console}
+What is the last integer output and what is the final value of \verb!i!?
+If you think the last integer output is \verb!111! and the final
+value of \verb!i! is \verb!222!, write \verb!111 222! with
+exactly one space between the two integers.
+\\
+\ANSWER
+\begin{answercode}
+47 47
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Here's a code fragment:
+\begin{console}[commandchars=\@\{\},fontsize=\footnotesize]
+int i = 10;
+
+i = i - 1;
+std::cout << i << '\n';
+
+i = i - 1;
+std::cout << i << '\n';
+
+i = i - 1;
+std::cout << i << '\n';
+\end{console}
+Note that there is a repeating chunk of code.
+This chunk of code appears 3 times.
+How many times must this repeating chunk of code appear
+if you want the last line of output to be \verb!-1!?
+\\
+\ANSWER
+\begin{answercode}
+11
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Here's a code fragment:
+\begin{console}[commandchars=\@\{\},fontsize=\footnotesize]
+int i = 42;
+
+std::cout << i << '\n';
+i = i * (-1);
+
+std::cout << i << '\n';
+i = i * (-1);
+
+std::cout << i << '\n';
+i = i * (-1);
+\end{console}
+Note that there is a repeating chunk of code.
+This chunk of code appears 3 times.
+\\
+If the repeating chunk of code appears 100 times,
+what is the last integer output and
+what is the final value of \verb!i!?
+If you think the last integer output is \verb!111! and the final
+value of \verb!i! is \verb!222!, write \verb!111 222! with
+exactly one space between the two integers.
+\\
+\ANSWER
+\begin{answercode}
+-42 42
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\input{thispostamble}

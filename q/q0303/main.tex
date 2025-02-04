@@ -1,0 +1,137 @@
+%-*-latex-*-
+\input{thispreamble}
+
+This is a closed-book, no compiler, 5 minute quiz.
+
+%------------------------------------------------------------------------------
+\nextq
+Here's a code fragment.
+The repeating chunk of code appears 5 times.
+\begin{console}[commandchars=\@\{\},fontsize=\footnotesize]
+int i = 0, s = 0;
+
+s = s + i;
+i = i + 2;
+
+s = s + i;
+i = i + 2;
+
+s = s + i;
+i = i + 2;
+
+s = s + i;
+i = i + 2;
+
+s = s + i;
+i = i + 2;
+\end{console}
+What is the final value of \verb!s!
+and the final value of \verb!i!?
+if you think the final value of \verb!s! is \verb!111!
+and the final value of \verb!i! is \verb!222!, write
+\verb!111 222! with exactly one space between the two values.
+\\
+\ANSWER
+\begin{answercode}
+20 10
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Here's a code fragment.
+The repeating chunk of code appears 8 times, but I'm only showing 3 of them:
+\begin{console}[frame=single,commandchars=\@\{\},fontsize=\footnotesize]
+int i = 0, s = 0;
+
+s = s + i;
+i = i + 2;
+
+s = s + i;
+i = i + 2;
+
+s = s + i;
+i = i + 2;
+
+// ... some code not shown ...
+\end{console}
+\\
+What is the final value of \verb!s!
+and the final value of \verb!i!?
+if you think the final value of \verb!s! is \verb!111!
+and the final value of \verb!i! is \verb!222!, write
+\verb!111 222! with exactly one space between the two values.
+\\
+\ANSWER
+\begin{answercode}
+56 16
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Here's a code fragment.
+The repeating chunk of code appears 7 times (only 3 are shown).
+\begin{console}[commandchars=\@\{\},fontsize=\small]
+int i = 1, s = 2;
+
+s = s + i;
+std::cout << s << '\n';
+i = i + 2;
+
+s = s + i;
+std::cout << s << '\n';
+i = i + 2;
+
+s = s + i;
+std::cout << s << '\n';
+i = i + 2;
+\end{console}
+What is the last integer output and the final value of \verb!i!?
+If you think the last integer output is \verb!111! and the final
+value of \verb!i! is \verb!222!,
+write \verb!111 222! with exactly one space between the two values.
+\\
+\ANSWER
+\begin{answercode}
+51 15
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+The following code fragment has a chunk of repeating code
+which appears 3 times.
+\begin{console}[commandchars=\@\{\},fontsize=\small]
+int i = 0, j;
+
+j = i * i;
+i = i + 1
+
+j = i * i;
+i = i + 1
+
+j = i * i;
+i = i + 1
+\end{console}
+What is the least number times the repeating chunk of code must appear if
+the final value of \verb!j! is greater than \verb!42!?
+\\
+\ANSWER
+\begin{answercode}
+8
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Two integer variables \verb$i$ and \verb$j$ are already declared.
+Write down 3 C++ statements to swap the values of
+\verb$i$ and \verb$j$.
+You can create exactly \textit{one} variable in the code.
+\\
+\ANSWER
+\begin{answercode}
+t = i;
+i = j;
+j = t;
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\input{thispostamble}

@@ -1,0 +1,80 @@
+%-*-latex-*-
+\input{thispreamble}
+
+This is a closed-book, no compiler, 5 minute quiz.
+
+%------------------------------------------------------------------------------
+\nextq
+Complete the following truth table:
+\begin{longtable}{|c|c||c|}\hline
+ \verb!x!	& \verb!y! 	& \verb!x! \verb!&&! \verb!y! \\ \hline
+ \verb!true!	& \verb!true!	& (a)                         \\ \hline
+ \verb!true!	& \verb!false!  & (b)                         \\ \hline
+ \verb!false!	& \verb!true!   & (c)                         \\ \hline
+ \verb!false!   & \verb!false!  & (d)                         \\ \hline
+\end{longtable}
+\vspace{-0.2cm}
+If you think the values (of (a), (b), (c), (d)) are
+\verb!true false true false! (respectively), you
+write
+\verb!true false true false! in that order with exactly one space between
+consecutive values.
+\\
+\ANSWER
+\begin{answercode}
+true false false false
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Complete the following truth table for \verb!||!
+\begin{longtable}{|c|c||c|}\hline
+\verb!x!       & \verb!y!      & \verb!x! \verb!||! \verb!y! \\ \hline
+\verb!true!    & \verb!true!   & (a) \\ \hline
+\verb!true!    & \verb!false!  & (b) \\ \hline
+\verb!false!   & \verb!true!   & (c) \\ \hline
+\verb!false!   & \verb!false!  & (d) \\ \hline
+\end{longtable}
+If you think the values (of (a), (b), (c), (d)) are
+\verb!true false true false! (respectively), you
+write
+\verb!true false true false! in that order with exactly one space between
+consecutive values.
+\\
+\ANSWER
+\begin{answercode}
+true true true false
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Complete the following truth table for \verb@!@
+\begin{longtable}{|c||c|}\hline
+\verb!x! & \hspace{0.15 in} \verb{!x{ \hspace{0.15 in}      \\ \hline
+\verb!true!	 & (a) \\ \hline
+\verb!false!     & (b) \\ \hline
+\end{longtable}
+If you think the values (of (a), (b)) are
+\verb!true true! (respectively), you
+write
+\verb!true true! in that order with exactly one space between
+consecutive values.
+\\
+\ANSWER
+\begin{answercode}
+false true
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Evaluate the following boolean expression
+\[
+          \verb@true || false && (!true && true)@
+\]
+\ANSWER
+\begin{answercode}
+true
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\input{thispostamble}

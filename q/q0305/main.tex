@@ -1,0 +1,147 @@
+%-*-latex-*-
+\input{thispreamble}
+
+This is a closed-book, no compiler, 5 minute quiz.
+
+%------------------------------------------------------------------------------
+\nextq
+The following code fragment has a repeating chunk of code that repeats
+3 times:
+\begin{Verbatim}[fontsize=\footnotesize,frame=single,commandchars=\\\{\}]
+int i = 1, j = 1;
+
+j = j * i;
+i = i + 1;
+
+j = j * i;
+i = i + 1;
+
+j = j * i;
+i = i + 1;
+\end{Verbatim}
+If the goal is to compute $1 \times 2 \times 3 \times \cdots \times 8$,
+how many times does the repeating chunk of code appear?
+\\
+\ANSWER
+\begin{answercode}
+8
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+What is the final value of \verb!i! at the end of this code fragment?
+\begin{Verbatim}[fontsize=\footnotesize,frame=single]
+int i = 0, j = 1;
+
+i = i * 10 + j;
+j = j + 1;
+
+i = i * 10 + j;
+j = j + 1;
+
+i = i * 10 + j;
+j = j + 1;
+
+i = i * 10 + j;
+j = j + 1;
+
+i = i * 10 + j;
+j = j + 1;
+
+i = i * 10 + j;
+j = j + 1;
+\end{Verbatim}
+\ANSWER
+\begin{answercode}
+123456
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+What is the final value of \verb!k! at the end of this code fragment?
+\begin{Verbatim}[fontsize=\footnotesize,frame=single]
+int i = 135692468, j = 1000000, k;
+
+k = i / j % 10;
+j = j / 10;
+
+k = i / j % 10;
+j = j / 10;
+
+k = i / j % 10;
+j = j / 10;
+
+k = i / j % 10;
+j = j / 10;
+
+k = i / j % 10;
+j = j / 10;
+
+k = i / j % 10;
+j = j / 10;
+\end{Verbatim}
+\ANSWER
+\begin{answercode}
+6
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+What is the final value of \verb!k! at the end of this code fragment?
+\begin{Verbatim}[fontsize=\footnotesize,frame=single]
+int i = 135792468, j = 1, k = 0;
+
+k = k * 10 + i / j % 10;
+j = j * 10;
+
+k = k * 10 + i / j % 10;
+j = j * 10;
+
+k = k * 10 + i / j % 10;
+j = j * 10;
+
+k = k * 10 + i / j % 10;
+j = j * 10;
+
+k = k * 10 + i / j % 10;
+j = j * 10;
+
+k = k * 10 + i / j % 10;
+j = j * 10;
+\end{Verbatim}
+\ANSWER
+\begin{answercode}
+864297
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+What is the final value of \verb!k! at the end of this code fragment?
+\begin{Verbatim}[fontsize=\footnotesize,frame=single]
+int i = 135792468, j = 1, k = 0;
+
+k = k + i / j % 10;
+j = j * 10;
+
+k = k + i / j % 10;
+j = j * 10;
+
+k = k + i / j % 10;
+j = j * 10;
+
+k = k + i / j % 10;
+j = j * 10;
+
+k = k + i / j % 10;
+j = j * 10;
+
+k = k + i / j % 10;
+j = j * 10;
+\end{Verbatim}
+\ANSWER
+\begin{answercode}
+36
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\input{thispostamble}

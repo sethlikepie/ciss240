@@ -1,0 +1,102 @@
+%-*-latex-*-
+\input{thispreamble}
+
+This is a closed-book, no compiler, 5 minute quiz.
+
+%------------------------------------------------------------------------------
+\nextq
+In the following
+the repeating chunk of code repeats 4 times (i.e. it appears 5 times).
+{\small
+\begin{console}[commandchars=\@\{\}]
+int i = 10, s = 0;
+
+s = s + i;
+i = i - 2;
+
+s = s + i;
+i = i - 2;
+
+...
+\end{console}
+What is the final value of \verb!i! and the final value of \verb!s!?
+If you think the final value of \verb!i! is \verb!111!
+and the final value of \verb!s! is \verb!222!, write \verb!111 222!
+with exactly one space between the two values.
+\\
+\ANSWER
+\begin{answercode}
+0 30
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Which of the following are valid variable names?
+If (a),(b),(e),(f) are the only valid variable names, write \verb!a b e f!
+in that order and with exactly one space between two consecutive letters.
+\begin{enumerate}[nosep,label=(\alph*)]
+\item  \hspace{0.5cm}\texttt{wassup}
+\item  \hspace{0.5cm}\texttt{noway!}
+\item  \hspace{0.5cm}\texttt{as\_far}
+\item  \hspace{0.5cm}\texttt{as3 far4}
+\item  \hspace{0.5cm}\texttt{5as\_6far}
+\item  \hspace{0.5cm}\texttt{\_as\_far\_}
+\item  \hspace{0.5cm}\texttt{gimme\$}
+\item  \hspace{0.5cm}\texttt{RETURN}
+\end{enumerate}
+\ANSWER
+\begin{answercode}
+a c f h
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+\tf. For the following write T for true and F for false (ignore M).
+\\
+The output of the following code fragment
+\begin{console}[fontsize=\footnotesize]
+int inheritance_from_uncle = 1000;
+int amt_of_\$_in_wallet = 10;
+int total_wealth = inheritance_from_uncle + amt_of_\$_in_wallet;
+std::cout << total_wealth << '\n';
+\end{console}
+is
+\begin{console}[fontsize=\footnotesize]
+1010
+\end{console}
+\ANSWER
+\begin{answercode}
+T
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Here's a code fragment
+\begin{console}[fontsize=\footnotesize]
+int i = 0, j = 0;
+
+j = j + i;
+i = i + 1;
+
+j = j + i;
+i = i + 1;
+
+j = j + i;
+i = i + 1;
+\end{console}
+Note that there is a chunk of repeating code that appears 3 times.
+If the goal is to compute
+$0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9$
+and store this value in variable \verb!j!,
+how many times must the repeating chunk of code appear?
+If you think $0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9$
+cannot be computed by repeat
+the above chunk of code, write ERROR.
+\\
+\ANSWER
+\begin{answercode}
+10
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\input{thispostamble}

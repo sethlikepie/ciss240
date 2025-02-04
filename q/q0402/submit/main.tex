@@ -1,0 +1,71 @@
+%-*-latex-*-
+\input{thispreamble}
+
+This is a closed-book, no compiler, 5 minute quiz.
+
+%------------------------------------------------------------------------------
+\nextq
+T or F:
+\\
+The value \verb!5! in the following expression is
+type promoted from an \verb!int! to a \verb!double!.
+\begin{console}[fontsize=\small]
+7 / 3.1 - 2 * 5
+\end{console}
+\ANSWER
+\begin{answercode}
+T
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+In the following expression, some operators are \verb!int!
+operators and others are \verb!double! operators.
+\begin{console}[fontsize=\small]
+1 + 2 * 4 / 2.0 - 4 / 5 + 7.2 + 1.2
+\end{console}
+What is the number of \verb!int! operators and the number of
+\verb!double! operators?
+If you think there are \verb!3! \verb!int! operators and
+\verb!4! \verb!double! operators, write \verb!5 3! with
+exactly one space between the two integers.
+\\
+\ANSWER
+\begin{answercode}
+5 3
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Write down the output when
+\verb!5! and \verb!8! are entered as inputs:
+\begin{console}[fontsize=\small]
+// Area of right-angle triangle
+double base = 0.0, height = 0.0;
+std::cin >> base >> height;
+std::cout << (1 / 2) * base * height << std::endl;
+\end{console}
+\ANSWER
+\begin{answercode}
+0
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+T or F.
+The following code fragment is incorrect since
+(1) a \verb!double! variable can only hold a \verb!double! value
+and not an \verb!int! value, and
+(2) an \verb!int! variable can only hold an \verb!int! value
+and not a \verb!double! value.
+\begin{console}[fontsize=\small]
+double x = 42;
+int y = 3.14;
+\end{console}
+\ANSWER
+\begin{answercode}
+F
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\input{thispostamble}

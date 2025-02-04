@@ -1,0 +1,117 @@
+%-*-latex-*-
+\input{thispreamble}
+
+This is a closed-book, no compiler, 5 minute quiz.
+
+%------------------------------------------------------------------------------
+\nextq
+What is the output of following code fragment:
+\begin{Verbatim}[frame=single,fontsize=\footnotesize]
+std::cout << 135246 / 10000 << std::endl;
+\end{Verbatim}
+\ANSWER
+\begin{answercode}
+13
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+What is the output of following code fragment:
+\begin{Verbatim}[frame=single,fontsize=\footnotesize]
+std::cout << 135246 % 100 << std::endl;
+\end{Verbatim}
+\ANSWER
+\begin{answercode}
+46
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+What is the output of the following code fragment:
+\begin{Verbatim}[frame=single,fontsize=\footnotesize]
+std::cout << (1357246 / 10000 % 100)  << std::endl;
+\end{Verbatim}
+\ANSWER
+\begin{answercode}
+35
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+What is the integer printed by the following code fragment:
+\begin{Verbatim}[frame=single,fontsize=\footnotesize]
+std::cout << (1357246 % 10000 / 100)  << std::endl;
+\end{Verbatim}
+\ANSWER
+\begin{answercode}
+24
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+To print the 4th digit from the right of \verb!1357246! (which is \verb!7!),
+I can execute this code fragment
+\begin{Verbatim}[frame=single,fontsize=\footnotesize]
+std::cout << (1357246 / x % 10) << std::endl;
+\end{Verbatim}
+where \verb!x! is a 10-power
+(i.e., \verb!x! is \verb!1! or \verb!10! or \verb!100! or \verb!1000!
+or \verb!10000!, etc.)
+What is the value of \verb!x!?
+\\
+\ANSWER
+\begin{answercode}
+1000
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\newpage
+\nextq
+To check if 35 is a prime, I can execute the following
+code fragment:
+\begin{Verbatim}[frame=single,fontsize=\footnotesize]
+std::cout << 35 % 2 << '\n';
+std::cout << 35 % 3 << '\n';
+std::cout << 35 % 4 << '\n';
+std::cout << 35 % 5 << '\n';
+std::cout << 35 % 6 << '\n';
+std::cout << 35 % 7 << '\n';
+std::cout << 35 % 8 << '\n';
+std::cout << 35 % 9 << '\n';
+std::cout << 35 % 10 << '\n';
+std::cout << 35 % 11 << '\n';
+std::cout << 35 % 12 << '\n';
+std::cout << 35 % 13 << '\n';
+std::cout << 35 % 14 << '\n';
+std::cout << 35 % 15 << '\n';
+std::cout << 35 % 16 << '\n';
+std::cout << 35 % 17 << '\n';
+std::cout << 35 % 18 << '\n';
+std::cout << 35 % 19 << '\n';
+std::cout << 35 % 20 << '\n';
+std::cout << 35 % 21 << '\n';
+std::cout << 35 % 22 << '\n';
+std::cout << 35 % 23 << '\n';
+std::cout << 35 % 24 << '\n';
+std::cout << 35 % 25 << '\n';
+std::cout << 35 % 26 << '\n';
+std::cout << 35 % 27 << '\n';
+std::cout << 35 % 28 << '\n';
+std::cout << 35 % 29 << '\n';
+std::cout << 35 % 30 << '\n';
+std::cout << 35 % 31 << '\n';
+std::cout << 35 % 32 << '\n';
+std::cout << 35 % 33 << '\n';
+std::cout << 35 % 34 << '\n';
+\end{Verbatim}
+But in fact I can stop earlier.
+What is the smallest value of \verb!d! such that
+I can stop at \verb!35 % d!?
+\\
+\ANSWER
+\begin{answercode}
+5
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\input{thispostamble}

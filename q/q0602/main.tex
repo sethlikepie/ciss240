@@ -1,0 +1,68 @@
+%-*-latex-*-
+\input{thispreamble}
+
+This is a closed-book, no compiler, 5 minute quiz.
+
+%------------------------------------------------------------------------------
+\nextq
+Write down the output of the following code fragment:
+\begin{console}
+int x = 0, y = 1, z = 2;
+std::cout << (x < y && x + y > z) << std::endl;
+\end{console}
+\ANSWER
+\begin{answercode}
+
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+If \verb!x!, \verb!y!, \verb!z! are integer variables with values 0, 1, 2
+(respecively),
+what is the boolean value of the follow expression:
+\begin{console}
+x > y + z || x + y < 3 * z && x > y
+\end{console}
+\ANSWER
+\begin{answercode}
+
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Simplify the following boolean expression (do not evaluate - because you can't):
+\begin{console}
+!(x < y) && (x >= w || w <= x) || ((x < 2) == true)
+\end{console}
+\ANSWER
+\begin{answercode}
+
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Complete the following code fragment.
+It prompts the user for the following values:
+\begin{enumerate}
+\item[$\bullet$] amount in the user's savings account (stored in variable \verb!savings!)
+\item[$\bullet$] monthly rent (stored in variable \verb!monthly_rent!)
+\item[$\bullet$] daily expenses (stored in variable \verb!daily_expenses!)
+\item[$\bullet$] number of days in the current month (stored in variable \verb!days_in_month!)
+\end{enumerate}
+You must initialize the boolean variable \verb!call_home_for_cash! so that it is set to true exactly when the amount in the user's savings account is less than the total expenses for the current month. The total expenses is (obviously) the sum of the following
+\begin{enumerate}
+\item[$\bullet$]monthly rent and product of daily expenses and number of days in the current month
+\end{enumerate}
+\ANSWER
+\begin{answercode}
+int savings, monthly_rent, daily_expenses, days_in_month;
+std::cin >> savings >> monthly_rent >> daily_expenses
+         >> days_in_month;
+
+bool call_home_for_cash =
+
+std::cout << call_home_for_cash << std::endl;
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\input{thispostamble}

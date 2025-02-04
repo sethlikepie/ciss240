@@ -1,0 +1,10 @@
+Q1(a) [] (write true or false)
+Q1(b) []
+Q1(c) []
+Q1(d) []
+Q2(a) []
+Q2(b) []
+Q2(c) []
+Q2(d) []
+Q3(a) []
+Q3(b) []

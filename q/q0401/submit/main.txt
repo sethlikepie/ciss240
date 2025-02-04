@@ -1,0 +1,4 @@
+Q1 [] (write int or char or C-string or float or double)
+Q2 []
+Q3 []
+Q4 []

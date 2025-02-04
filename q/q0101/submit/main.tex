@@ -1,0 +1,86 @@
+%-*-latex-*-
+\input{thispreamble}
+
+This is a closed-book, no compiler, 5 minute quiz.
+
+This is a closed book quiz.
+You have 5 minutes (that is from beginning to the end including
+the submission of your work.)
+
+If you are using Microsoft Visual Studio, you must clear all the
+auto-generated code and write the program on your own.
+
+%------------------------------------------------------------------------------
+\nextq
+The goal is to write a \cpp\ program.
+
+The FIRST FEW LINES of your \cpp\ source file must look like this:
+\begin{console}
+// Name: John Doe
+// File: main.cpp
+
+#include <iostream>
+\end{console}
+with \lq\lq John Doe''replaced by your name (of course).
+
+Write a \cpp\ program that produces the following output in the console
+window (when you execute the program):
+\begin{console}
+hello master ...
+\end{console}
+Your output must following the above \textit{exactly} as given.
+For instance,
+your program is \textit{wrong} if the output is
+\begin{console}
+Hello master ...
+\end{console}
+or
+\begin{console}
+hello master.
+\end{console}
+or
+\begin{console}
+hello    master ...
+\end{console}
+or any other variation.
+
+Your coding style must following the coding style as used in class.
+That includes the spacing, the blank lines, etc.
+
+After you have tested your code, open \verb!main.tex! (using emacs).
+Look for \verb!ANSWER! (in emacs search is \verb!C-s!).
+Copy-and-paste your code between \verb!\begin{answercode}! and
+\verb!\end{answercode}!.
+Save \verb!main.tex! (in emacs do \verb!C-x C-s!).
+In your bash shell, execute \verb!make! and view the pdf.
+Submit using the \verb!alex! program.
+
+\ANSWER
+\begin{answercode}
+// Name: Seth Thurman
+// File: main.cpp
+
+#include <iostream>
+
+int main()
+{
+  std::cout << "hello master ...\n";
+
+  return 0;
+}
+\end{answercode}
+
+\textsc{Grading.}
+\begin{enumerate}
+\item If your program was not received in time: 0/2
+\item If your program contains error(s) and does not run: 0/2
+\item If your program is error-free, does run, but produces no output: 0/2
+\item If your program is error-free, does run, produces an output, but the output does not match the given output: 0/2
+\item If your program is error-free, does run, and produces an output that matches
+the given output: 2/2
+\item After the points from above,
+point(s) will be taken off for incorrect coding style.
+\end{enumerate}
+
+%------------------------------------------------------------------------------
+\input{thispostamble}

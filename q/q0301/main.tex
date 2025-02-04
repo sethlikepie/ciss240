@@ -1,0 +1,113 @@
+%-*-latex-*-
+\input{thispreamble}
+
+This is a closed-book, no compiler, 5 minute quiz.
+
+%------------------------------------------------------------------------------
+\nextq
+Write one \cpp\ statement that
+declares an integer variable with the name
+\verb!i! and initialize it with the value of \verb!0!.
+\\
+\ANSWER
+\begin{answercode}
+int i = 0;
+\end{answercode}
+(What must a \cpp\ statement end with?)
+
+%------------------------------------------------------------------------------
+\nextq
+Write one \cpp\ statement that declares an integer variable \verb!j!
+without initialization, and then write another statement that
+assigns \verb!0! to \verb!j!.
+\\
+\ANSWER
+\begin{answercode}
+int j;
+j = 0;
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Write \textit{one} \cpp\ statement that declares two integer variables,
+one called \texttt{x} and another called \texttt{y}.
+Initialize \texttt{x} with \texttt{0} and \texttt{y} with \texttt{1}.
+\\
+\ANSWER
+\begin{answercode}
+int x = 0, y = 1;
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Before the following statement is executed,
+integer variable \verb!x! has a value of 5
+and integer variable \verb!y! has a value of 2.
+\begin{console}[fontsize=\footnotesize]
+x = x + y;
+\end{console}
+What are the values of \verb!x! and \verb!y! after the above statement is
+executed?
+Enter exactly one space between the two values.
+In other words, if you think \verb!x! is 111 and \verb!y! is 222,
+enter \verb!111 222!.
+\\
+\ANSWER
+\begin{answercode}
+7 2
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Before the following statements are executed,
+the integer variable \verb!x! has a value of 5,
+the integer variable \verb!y! has a value of 2, and
+the integer variable \verb|z| has a value of 4.
+\begin{console}[fontsize=\footnotesize]
+y = y + 1;
+x = x + y + z;
+z = x + z / y;
+\end{console}
+What are the values of \verb!x!, \verb!y! and \verb!z!
+after the above statements are executed?
+Enter exactly one space between two values.
+In other words, if you think \verb!x! is 111, \verb!y! is 222 and \verb!z! is 333,
+you enter \verb!111 222 333!.
+\\
+\ANSWER
+\begin{answercode}
+11 3 7
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+The integer variable \verb!n! is already declared.
+Write one \cpp\ statement to get an integer input from the
+user (via the keyboard) and give this integer value to \verb!n!.
+\\
+\ANSWER
+\begin{answercode}
+std::cin >> n;
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Write the following statements.
+Declare an integer variable \verb!i! (without initialization).
+Get an integer input from the user (via the keyboard) and store that
+value in \verb!i!.
+Declare an integer variable \verb!d0!
+and initialize it with the rightmost digit of \verb!i!.
+(Example: The \lq\lq rightmost digit" of \verb!135246! is \verb!6!.)
+Print the value stored in \verb!d0! followed by the newline character.
+\\
+\ANSWER
+\begin{answercode}
+int i;
+std::cin >> i;
+int d0 = i % 10;
+std::cout << d0 << std::endl;
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\input{thispostamble}

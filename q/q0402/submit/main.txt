@@ -1,0 +1,5 @@
+Q1 [ ] (write T for true and F for false)
+Q2 [ ]
+Q3 [ ]
+Q4 [ ]
+

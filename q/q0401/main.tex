@@ -1,0 +1,90 @@
+%-*-latex-*-
+\input{thispreamble}
+
+This is a closed-book, no compiler, 5 minute quiz.
+
+%------------------------------------------------------------------------------
+\nextq
+What is the type of the value of the following expression?
+\begin{console}[fontsize=\small]
+1 + 2 * 3.1 - 4 + 3
+\end{console}
+(Write \verb!int! or \verb!char! or \verb!C-string! or \verb!float! or
+\verb!double!.)
+\\
+\ANSWER
+\begin{answercode}
+double
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Joe Cantcode wrote the following code fragment:
+\begin{console}[commandchars=\@\{\},fontsize=\small]
+int x, y;
+std::cin >> x >> y;
+std::cout << x / y << std::endl;
+\end{console}
+When he entered \verb!2! for \verb!x! and \verb!8! for \verb!y!,
+the instructor wanted
+the output to be 0.25.
+But it's \textit{not}.
+What should be printed in the print statement:
+\begin{console}[commandchars=\@\{\},fontsize=\small]
+int x, y;
+std::cin >> x >> y;
+std::cout << @underline{@hspace{2in}} << std::endl;
+\end{console}
+\ANSWER
+\begin{answercode}
+double(x) / y
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+What integer value in the following
+C\texttt{++}
+expression is the \textit{first} to be type promoted to a \texttt{double}?
+\begin{console}[commandchars=\\\{\},fontsize=\small]
+4 + 2 - 13 / 4 * 5.1 + 2
+\end{console}
+\ANSWER
+\begin{answercode}
+3
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+What is the final value of \verb!s! for the following code fragment?
+\begin{Verbatim}[fontsize=\footnotesize,frame=single]
+double s = 0.0;
+int i = 1;
+int j = 10;
+
+s = s + i / double(j);
+i = i + 1;
+j = j * 10;
+
+s = s + i / double(j);
+i = i + 1;
+j = j * 10;
+
+s = s + i / double(j);
+i = i + 1;
+j = j * 10;
+
+s = s + i / double(j);
+i = i + 1;
+j = j * 10;
+
+s = s + i / double(j);
+i = i + 1;
+j = j * 10;
+\end{Verbatim}
+\ANSWER
+\begin{answercode}
+0.12345
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\input{thispostamble}

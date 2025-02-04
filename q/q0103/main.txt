@@ -1,0 +1,5 @@
+Q1 [] 
+Q2 [] (enter T for true or F for false)
+Q3 [] 
+Q4 [] (enter T for true or F for false)
+Q5 [] (enter the string -- don't forget the double quotes!)
